@@ -135,22 +135,58 @@
 <!-- DASHBOARD -->
 <div id="dashboard" class="hidden">
 
-  <h2>Welcome Student 👋</h2>
-
-  <div class="hero">
-    <h1>Learn Better.<br><span class="highlight">Achieve Greater.</span></h1>
-    <p>Start your journey 🚀</p>
+  <!-- HEADER -->
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+    <h3>🎓 OHA Learning</h3>
+    <div>⭐ 650 XP</div>
   </div>
 
-  <div class="card">
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Learn Better.<br><span class="highlight">Achieve Greater.</span></h1>
+    <p>Your smart learning app</p>
+
     <button class="btn green" onclick="show('student')">
-      📚 Choose Your Class
+      🚀 Start Learning
     </button>
   </div>
 
-  <div class="card">
-    <p>🔥 Your Progress: 0%</p>
+  <!-- STATS -->
+  <div class="section">
+    <div class="feature">📘 5000+ Topics</div>
+    <div class="feature">⭐ 1000+ Quizzes</div>
+    <div class="feature">🏆 Top Rankers</div>
   </div>
+
+  <!-- CLASS -->
+  <h3 style="margin-top:20px;">Choose Your Class</h3>
+
+  <div class="levels">
+    <div class="level" onclick="selectClass(8)">8</div>
+    <div class="level" onclick="selectClass(9)">9</div>
+    <div class="level" onclick="selectClass(10)">10</div>
+    <div class="level" onclick="selectClass(11)">11</div>
+    <div class="level" onclick="selectClass(12)">12</div>
+  </div>
+
+  <!-- CONTINUE -->
+  <div class="feature" style="margin-top:20px;">
+    📘 Continue Learning <br>
+    Science – Chapter 2 <br>
+    <progress value="60" max="100"></progress>
+  </div>
+
+  <!-- MICRO LEARNING -->
+  <div class="feature" style="margin-top:20px;">
+    <b style="color:#27ae60;">Micro Learning</b><br>
+    <i>"Small Bites, Big Understanding."</i><br><br>
+
+    Short lessons. Clear concepts. Better retention.<br><br>
+
+    <button class="btn green">Explore</button>
+  </div>
+
+</div>
 
 </div> <!-- ✅ CLOSE DASHBOARD HERE -->
 
