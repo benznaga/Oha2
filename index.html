@@ -178,18 +178,11 @@
   <h3 style="margin-top:20px;">Choose Your Class</h3>
 
   <div class="levels">
-    <div class="level" onclick="selectClass(8)">8</div>
-    <div class="level" onclick="selectClass(9)">9</div>
-    <div class="level" onclick="selectClass(10)">10</div>
-    <div class="level" onclick="selectClass(11)">11</div>
-    <div class="level" onclick="selectClass(12)">12</div>
-  </div>
-
-  <div id="subjects" class="hidden" style="margin-top:20px;">
-  <h3>Select Subject</h3>
-
-  <div class="level" onclick="selectSubject('Science')">🔬 Science</div>
-  <div class="level" onclick="selectSubject('Math')">➗ Math</div>
+    <div class="level" onclick="goToClass(8)">8</div>
+    <div class="level" onclick="goToClass(9)">9</div>
+    <div class="level" onclick="goToClass(10)">10</div>
+    <div class="level" onclick="goToClass(11)">11</div>
+    <div class="level" onclick="goToClass(12)">12</div>
   </div>
 
   <!-- CONTINUE -->
@@ -343,17 +336,11 @@ function calculatePlan(){
     "📅 Days Left: " + daysLeft +
     " | 📘 Topics/day: " + perDay;
 }
+ 
+  function goToClass(cls){
+  selectClass(cls);
+  }
 </script>
-
-  <script>
-function selectClass(cls) {
-  document.getElementById('subjects').classList.remove('hidden');
-}
-
-function selectSubject(sub) {
-  alert("You selected " + sub);
-}
-  </script>
 
 </body>
 </html>
