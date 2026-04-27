@@ -132,6 +132,28 @@
   color: #2ecc71;
   font-weight: bold;
 }
+    /* FEATURES GRID */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
   </style>
 </head>
 
@@ -171,12 +193,32 @@
     <button class="btn blue" onclick="show('teacher')">👨‍🏫 I am a Teacher</button>
  
   </div>
-  <div class="section">
-    <div class="feature">📘 Concept First Learning</div>
-    <div class="feature">🧠 Think Deep</div>
-    <div class="feature">🎯 Practice & Quizzes</div>
-    <div class="feature">🏆 Earn XP & Progress</div>
+<div class="features-grid">
+
+  <div class="card">
+    📘<br>
+    <b>Concept First</b><br>
+    <small>Stories & examples</small>
   </div>
+
+  <div class="card">
+    🧠<br>
+    <b>Think Deep</b><br>
+    <small>Understand concepts</small>
+  </div>
+
+  <div class="card">
+    🎯<br>
+    <b>Practice</b><br>
+    <small>Quizzes & tests</small>
+  </div>
+
+  <div class="card">
+    🏆<br>
+    <b>Earn XP</b><br>
+    <small>Track progress</small>
+  </div>
+  
 </div>  
   
 
@@ -211,6 +253,44 @@
     Learn Better.<br>
     <span class="highlight">Achieve Greater.</span>
   </h1>
+
+  <p>Your smart learning app for Classes 8–12</p>
+
+<button class="btn green" onclick="show('dashboard')">🎓 I am a Student</button>
+<button class="btn blue" onclick="show('teacher')">👨‍🏫 I am a Teacher</button>
+
+</div> <!-- ✅ CLOSE HERO -->
+
+<!-- ✅ FEATURES GRID MUST COME HERE -->
+<div class="features-grid">
+
+  <div class="card">
+    📘<br>
+    <b>Concept First</b><br>
+    <small>Stories & examples</small>
+  </div>
+
+  <div class="card">
+    🧠<br>
+    <b>Think Deep</b><br>
+    <small>Understand concepts</small>
+  </div>
+
+  <div class="card">
+    🎯<br>
+    <b>Practice</b><br>
+    <small>Quizzes & tests</small>
+  </div>
+
+  <div class="card">
+    🏆<br>
+    <b>Earn XP</b><br>
+    <small>Track progress</small>
+  </div>
+
+</div> <!-- ✅ CLOSE GRID -->
+
+</div> <!-- ✅ CLOSE HOME -->
 
   <p style="color:#555;">
     Your all-in-one learning companion from classes 8-12
