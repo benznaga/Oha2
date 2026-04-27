@@ -150,33 +150,65 @@
 <div id="dashboard" class="hidden">
 
   <!-- HEADER -->
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-    <h3>🎓 OZEN Learning</h3>
-    <div>⭐ 650 XP</div>
+  <div style="
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:15px;
+">
+
+  <h3 style="margin:0;">📘 OZEN Learning</h3>
+
+  <div style="
+    background:#e8f5e9;
+    padding:8px 12px;
+    border-radius:20px;
+    font-weight:bold;
+    color:#2e7d32;
+  ">
+    ⭐ 650 XP
   </div>
+
+</div>
 
   <!-- HERO -->
-  <div class="hero">
-    <h1>Learn Better.<br><span class="highlight">Achieve Greater.</span></h1>
-<p style="color: #4CAF50; font-weight: 500;">
-  Micro Learning: Small Bites, Big Understanding
-</p>
+<div class="hero">
+  <h1 style="font-size:28px;">
+    Learn Better.<br>
+    <span class="highlight">Achieve Greater.</span>
+  </h1>
 
-    <button onclick="document.getElementById('class-section').scrollIntoView({ behavior: 'smooth' })">
-  🚀 Start Learning
-</button>
-  </div>
+  <p style="color:#555;">
+    Your all-in-one learning companion from classes 8-12
+  </p>
+
+  <button class="btn green">
+    Start Learning →
+  </button>
+</div>
   
 <!-- CONTINUE -->
-  <div class="feature" style="
+  <div style="
+  display:flex;
+  gap:12px;
+  align-items:center;
+  background:white;
+  padding:15px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
   margin-top:15px;
-  border:2px solid #2ecc71;
-  background:#f0fff4;
 ">
-    📘 Continue Learning <br>
-    Science – Chapter 2 <br>
-    <progress value="60" max="100"></progress>
+
+  <div style="font-size:30px;">🧪</div>
+
+  <div style="flex:1;">
+    <b>Science</b><br>
+    Chapter 2: Chemical Reactions
+
+    <progress value="60" max="100" style="width:100%; margin-top:5px;"></progress>
   </div>
+
+</div>
   
   <!-- STATS -->
   <div class="section">
@@ -189,12 +221,14 @@
   <h3 style="margin-top:20px;">Choose Your Class</h3>
 
   <div class="levels">
-    <div class="level" onclick="goToClass(8)">8</div>
-    <div class="level" onclick="goToClass(9)">9</div>
-    <div class="level" onclick="goToClass(10)">10</div>
-    <div class="level" onclick="goToClass(11)">11</div>
-    <div class="level" onclick="goToClass(12)">12</div>
-  </div>
+
+  <div class="level" style="background:#e8f5e9;" onclick="goToClass(8)">8</div>
+  <div class="level" style="background:#e3f2fd;" onclick="goToClass(9)">9</div>
+  <div class="level" style="background:#f3e5f5;" onclick="goToClass(10)">10</div>
+  <div class="level" style="background:#fff3e0;" onclick="goToClass(11)">11</div>
+  <div class="level" style="background:#fce4ec;" onclick="goToClass(12)">12</div>
+
+</div>
 
 
 
