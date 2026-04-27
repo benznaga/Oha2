@@ -200,7 +200,13 @@
 
 <script>
 function show(id){
-  document.querySelectorAll("div[id]").forEach(el => el.classList.add("hidden"));
+  document.getElementById("home").classList.add("hidden");
+  document.getElementById("dashboard").classList.add("hidden");
+  document.getElementById("student").classList.add("hidden");
+  document.getElementById("stream").classList.add("hidden");
+  document.getElementById("subjects").classList.add("hidden");
+  document.getElementById("teacher").classList.add("hidden");
+
   document.getElementById(id).classList.remove("hidden");
 }
 
