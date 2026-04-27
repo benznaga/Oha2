@@ -106,6 +106,9 @@
 #subjectList .btn {
   margin-top: 10px;
 }
+    .hidden {
+  display: none;
+    }
   </style>
 </head>
 
@@ -132,8 +135,8 @@
 
     <button class="btn green" onclick="show('dashboard')">🎓 I am a Student</button>
     <button class="btn blue" onclick="show('teacher')">👨‍🏫 I am a Teacher</button>
+ 
   </div>
-
   <div class="section">
     <div class="feature">📘 Concept First Learning</div>
     <div class="feature">🧠 Think Deep</div>
@@ -159,9 +162,9 @@
   Micro Learning: Small Bites, Big Understanding
 </p>
 
-    <button class="btn green" onclick="show('student')">
-      🚀 Start Learning
-    </button>
+    <button onclick="document.getElementById('class-section').scrollIntoView({ behavior: 'smooth' })">
+  🚀 Start Learning
+</button>
   </div>
 
   <!-- STATS -->
@@ -180,6 +183,13 @@
     <div class="level" onclick="selectClass(10)">10</div>
     <div class="level" onclick="selectClass(11)">11</div>
     <div class="level" onclick="selectClass(12)">12</div>
+  </div>
+
+  <div id="subjects" class="hidden" style="margin-top:20px;">
+  <h3>Select Subject</h3>
+
+  <div class="level" onclick="selectSubject('Science')">🔬 Science</div>
+  <div class="level" onclick="selectSubject('Math')">➗ Math</div>
   </div>
 
   <!-- CONTINUE -->
@@ -334,6 +344,16 @@ function calculatePlan(){
     " | 📘 Topics/day: " + perDay;
 }
 </script>
+
+  <script>
+function selectClass(cls) {
+  document.getElementById('subjects').classList.remove('hidden');
+}
+
+function selectSubject(sub) {
+  alert("You selected " + sub);
+}
+  </script>
 
 </body>
 </html>
