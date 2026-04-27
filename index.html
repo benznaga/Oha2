@@ -94,6 +94,18 @@
     }
 
     .hidden { display: none; }
+
+    #subjectList {
+  margin-top: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#subjectList .btn {
+  margin-top: 10px;
+}
   </style>
 </head>
 
@@ -218,7 +230,7 @@ function loadSubjects(subjects){
   subjects.forEach(sub => {
     let btn = document.createElement("button");
 
-    btn.className = "btn purple";
+    btn.className = "btn green";
     btn.innerText = sub;
 
     btn.onclick = () => {
