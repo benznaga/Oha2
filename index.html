@@ -211,15 +211,22 @@ function showArts(){
 }
 
 function loadSubjects(subjects){
-  show('subjects');
   let list = document.getElementById("subjectList");
+
   list.innerHTML = "";
+
+  show('subjects');
 
   subjects.forEach(sub => {
     let btn = document.createElement("button");
+
     btn.className = "btn purple";
     btn.innerText = sub;
-    btn.onclick = () => alert("Next: Chapters + Topics");
+
+    btn.onclick = () => {
+      alert("Next: Chapters + Topics for " + sub);
+    };
+
     list.appendChild(btn);
   });
 }
